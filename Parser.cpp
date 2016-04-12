@@ -84,15 +84,18 @@ int main() {
 	string line, command;
 	string name, s_resistance, s_node1, s_node2, dummy;
 	int node1, node2;
-	// int args_count;
 	double resistance;
 	std::cout << std::fixed;
 
 	// cout << "> ";
-	//getline (cin, line); // Get a line from standard input
-	while (getline (file, line)) {
+	// getline (cin, line); // Get a line from standard input
+	// while (getline (file, line)) {
+	while (!cin.eof()) {
+		line.clear();
 		cout << "> ";
-		cout << line << endl;
+		getline (cin, line); // Get a line from standard input
+		// cout << "> " << line << endl;
+
 		stringstream lineStream (line);
 		lineStream >> command;
 		if (check_command(command))// First Error Check
@@ -104,7 +107,7 @@ int main() {
 			// parse an insertR command
 
 				if (!(lineStream >> name)) {// Eighth Error Check - Too few args
-					cout << "Too few arguments" << endl;
+					cout << "Too few argumentsss" << endl;
 					continue;
 				}
 
@@ -297,7 +300,7 @@ int main() {
 			}
 		}
 		// cout << "> ";
-		//getline (cin, line); // Get a line from standard input
+		// getline (cin, line); // Get a line from standard input
 	} // End input loop until EOF.
 	return 0;
 }
