@@ -117,6 +117,11 @@ int main() {
 				stringstream convert_r(s_resistance);
 				convert_r >> resistance;
 
+				if (check_resistance(resistance)) {// Third Error Check
+					cout << "Error: negative resistance" << endl; 
+					continue;
+				}
+
 				if (!(lineStream >> s_node1)) {// Eighth Error Check - Too few args
 					cout << "Error: too few arguments" << endl;
 					continue;
@@ -150,11 +155,6 @@ int main() {
 				}
 				stringstream convert_n2(s_node2);
 				convert_n2 >> node2;
-
-				if (check_resistance(resistance)) {// Third Error Check
-					cout << "Error: negative resistance" << endl; 
-					continue;
-				}
 
 				if (check_node_value(node1)) {// Fourth Error Check
 					cout << "Error: node " << node1 << " is out of permitted range " << MIN_NODE_NUMBER << "-" << MAX_NODE_NUMBER << endl;
