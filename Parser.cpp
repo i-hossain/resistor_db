@@ -91,12 +91,11 @@ int main() {
 
 		stringstream lineStream (line);
 		lineStream >> command;
-		// cout << "command: " << command << endl;
+
 		if (check_command(command))// First Error Check
 			cout << "Error: invalid command" << endl; 
 		else
 		{
-			// reset_args_count(&args_count);
 			if (command == "insertR") {
 			// parse an insertR command
 
@@ -157,12 +156,14 @@ int main() {
 				convert_n2 >> node2;
 
 				if (check_node_value(node1)) {// Fourth Error Check
-					cout << "Error: node " << node1 << " is out of permitted range " << MIN_NODE_NUMBER << "-" << MAX_NODE_NUMBER << endl;
+					cout << "Error: node " << node1 << " is out of permitted range " 
+					<< MIN_NODE_NUMBER << "-" << MAX_NODE_NUMBER << endl;
 					continue;
 				}
 
 				if (check_node_value(node2)) {// Fourth Error Check
-					cout << "Error: node " << node2 << " is out of permitted range " << MIN_NODE_NUMBER << "-" << MAX_NODE_NUMBER << endl;
+					cout << "Error: node " << node2 << " is out of permitted range " 
+					<< MIN_NODE_NUMBER << "-" << MAX_NODE_NUMBER << endl;
 					continue;
 				}
 
@@ -181,8 +182,9 @@ int main() {
 					continue;
 				}
 
-				//Correct Output
-				cout << "Inserted: resistor " << name << " " << std::setprecision(2) << resistance << " Ohms " << node1 << " -> " << node2 << endl;
+				// Correct Output
+				cout << "Inserted: resistor " << name << " " << std::setprecision(2) 
+				<< resistance << " Ohms " << node1 << " -> " << node2 << endl;
 			}
 			else if ( command == "modifyR" ) {
 			// parse a modifyR command
@@ -219,11 +221,13 @@ int main() {
 					continue;
 				}
 
-				//Correct Output
-				cout << "Modified: resistor " << name << " to " << std::setprecision(2) << resistance << " Ohms" << endl;
+				// Correct Output
+				cout << "Modified: resistor " << name << " to " << std::setprecision(2) 
+				<< resistance << " Ohms" << endl;
 			}
 			else if ( command == "printR" ) {
 			// parse a printR command
+
 				if (!(lineStream >> name)) {// Eighth Error Check - Too few args
 					cout << "Error: too few arguments" << endl;
 					continue;
@@ -234,6 +238,7 @@ int main() {
 					continue;
 				}
 
+				// Correct Output
 				if (name == ALL)
 					cout << "Print: all resistors" << endl;
 				else
@@ -241,6 +246,7 @@ int main() {
 			}
 			else if ( command == "printNode" ) {
 			// parse a printNode command
+
 				if (!(lineStream >> name)) {// Eighth Error Check - Too few args
 					cout << "Error: too few arguments" << endl;
 					continue;
@@ -253,6 +259,7 @@ int main() {
 						continue;
 					}
 
+					// Correct Output
 					cout << "Print: all nodes" << endl;
 					continue;
 				}
@@ -269,7 +276,8 @@ int main() {
 					convert_n1 >> node1;
 
 					if (check_node_value(node1)) {// Fourth Error Check
-						cout << "Error: node " << node1 << " is out of permitted range " << MIN_NODE_NUMBER << "-" << MAX_NODE_NUMBER << endl;
+						cout << "Error: node " << node1 << " is out of permitted range " 
+						<< MIN_NODE_NUMBER << "-" << MAX_NODE_NUMBER << endl;
 						continue;
 					}
 
@@ -278,11 +286,13 @@ int main() {
 					continue;
 					}
 
+					// Correct Output
 					cout << "Print: node " << node1 << endl;
 				}
 			}
 			else if ( command == "deleteR" ) {
 			// parse a deleteR command
+
 				if (!(lineStream >> name)) {// Eighth Error Check - Too few args
 					cout << "Error: too few arguments" << endl;
 					continue;
@@ -293,6 +303,7 @@ int main() {
 					continue;
 				}
 
+				// Correct Output
 				if (name == ALL)
 					cout << "Deleted: all resistors" << endl;
 				else
