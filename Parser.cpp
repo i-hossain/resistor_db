@@ -101,12 +101,12 @@ int main() {
 			// parse an insertR command
 
 				if (!(lineStream >> name)) {// Eighth Error Check - Too few args
-					cout << "Too few arguments" << endl;
+					cout << "Error: too few arguments" << endl;
 					continue;
 				}
 
 				if (!(lineStream >> s_resistance)) {// Eighth Error Check - Too few args
-					cout << "Too few arguments" << endl;
+					cout << "Error: too few arguments" << endl;
 					continue;
 				}
 
@@ -118,7 +118,7 @@ int main() {
 				convert_r >> resistance;
 
 				if (!(lineStream >> s_node1)) {// Eighth Error Check - Too few args
-					cout << "Too few arguments" << endl;
+					cout << "Error: too few arguments" << endl;
 					continue;
 				}
 
@@ -134,7 +134,7 @@ int main() {
 				convert_n1 >> node1;
 
 				if (!(lineStream >> s_node2)) {// Eighth Error Check - Too few args
-					cout << "Too few arguments" << endl;
+					cout << "Error: too few arguments" << endl;
 					continue;
 				}
 
@@ -177,23 +177,23 @@ int main() {
 				}
 
 				if (lineStream >> dummy){// Seventh Error Check - Too many args
-					cout << "Too many arguments" << endl;
+					cout << "Error: too many arguments" << endl;
 					continue;
 				}
 
 				//Correct Output
-				cout << "Inserted: " << name << " " << std::setprecision(2) << resistance << " Ohms " << node1 << " -> " << node2 << endl;
+				cout << "Inserted: resistor " << name << " " << std::setprecision(2) << resistance << " Ohms " << node1 << " -> " << node2 << endl;
 			}
 			else if ( command == "modifyR" ) {
 			// parse a modifyR command
 
 				if (!(lineStream >> name)) {// Eighth Error Check - Too few args
-					cout << "Too few arguments" << endl;
+					cout << "Error: too few arguments" << endl;
 					continue;
 				}
 				
 				if (!(lineStream >> s_resistance)) {// Eighth Error Check - Too few args
-					cout << "Too few arguments" << endl;
+					cout << "Error: too few arguments" << endl;
 					continue;
 				}
 
@@ -215,7 +215,7 @@ int main() {
 				}
 
 				if (lineStream >> dummy) {// Seventh Error Check - Too many args
-					cout << "Too many arguments" << endl;
+					cout << "Error: too many arguments" << endl;
 					continue;
 				}
 
@@ -225,12 +225,12 @@ int main() {
 			else if ( command == "printR" ) {
 			// parse a printR command
 				if (!(lineStream >> name)) {// Eighth Error Check - Too few args
-					cout << "Too few arguments" << endl;
+					cout << "Error: too few arguments" << endl;
 					continue;
 				}
 
 				if (lineStream >> dummy) {// Seventh Error Check - Too many args
-					cout << "Too many arguments" << endl;
+					cout << "Error: too many arguments" << endl;
 					continue;
 				}
 
@@ -242,7 +242,7 @@ int main() {
 			else if ( command == "printNode" ) {
 			// parse a printNode command
 				if (!(lineStream >> name)) {// Eighth Error Check - Too few args
-					cout << "Too few arguments" << endl;
+					cout << "Error: too few arguments" << endl;
 					continue;
 				}
 
@@ -268,7 +268,7 @@ int main() {
 					}
 
 					if (lineStream >> dummy) {// Seventh Error Check - Too many args
-					cout << "Too many arguments" << endl;
+					cout << "Error: too many arguments" << endl;
 					continue;
 					}
 
@@ -278,12 +278,12 @@ int main() {
 			else if ( command == "deleteR" ) {
 			// parse a deleteR command
 				if (!(lineStream >> name)) {// Eighth Error Check - Too few args
-					cout << "Too few arguments" << endl;
+					cout << "Error: too few arguments" << endl;
 					continue;
 				}
 
 				if (lineStream >> dummy) {// Seventh Error Check - Too many args
-					cout << "Too many arguments" << endl;
+					cout << "Error: too many arguments" << endl;
 					continue;
 				}
 
