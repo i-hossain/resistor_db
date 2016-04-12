@@ -2,7 +2,6 @@
 #include <sstream>
 #include <string>
 #include <iomanip>
-#include <fstream>
 #include <cmath>
 #include <typeinfo>
 using namespace std;
@@ -16,8 +15,6 @@ using namespace std;
 #define NUM_ARGS_PRINTNODE 1
 #define NUM_ARGS_DELETE 1
 #define ALL "all"
-
-#define TEST_FILE "test.txt"
 
 
 bool check_command(string command) {
@@ -80,16 +77,12 @@ bool check_duplicate_node(int node1, int node2) {
 
 
 int main() {
-	ifstream file(TEST_FILE);
 	string line, command;
 	string name, s_resistance, s_node1, s_node2, dummy;
 	int node1, node2;
 	double resistance;
 	std::cout << std::fixed;
 
-	// cout << "> ";
-	// getline (cin, line); // Get a line from standard input
-	// while (getline (file, line)) {
 	while (true) {
 		cout << "> ";
 		getline (cin, line); // Get a line from standard input
@@ -300,8 +293,6 @@ int main() {
 					cout << "Deleted: resistor " << name << endl;
 			}
 		}
-		// cout << "> ";
-		// getline (cin, line); // Get a line from standard input
 	} // End input loop until EOF.
 	return 0;
 }
