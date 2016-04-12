@@ -1,0 +1,11 @@
+insertR r1 onehundred 1 2
+insertR r1 -100 1 2
+insertR r1 100 one 2
+insertR r1 100 1 two
+insertR r1 100 -1 2
+insertR r1 100 1 -2
+insertR r1 100 5001 2
+insertR r1 100 1 5002
+modifyR r1 -1
+modifyR r1 fiftyohms
+printNode thewholething

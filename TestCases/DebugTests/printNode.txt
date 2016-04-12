@@ -1,0 +1,8 @@
+printNode all
+printNode jdiowaj
+printNode
+printNode 5 dwaj
+printNode 5
+printNode 5001
+printNode -1
+printNode 0

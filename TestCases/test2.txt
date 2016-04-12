@@ -1,0 +1,8 @@
+NotACommand
+insertR r0 five 1 2
+modifyR r0 -100
+printNode 5001
+insertR all 100 1 2
+insertR r0 100 1 1
+deleteR r0 r1
+printR

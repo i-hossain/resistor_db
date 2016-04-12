@@ -1,0 +1,8 @@
+insertR r1 50 1 2
+modifyR 1 100
+printR r1
+printR all
+printNode 1
+printNode all
+deleteR r1
+deleteR all

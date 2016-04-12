@@ -1,0 +1,14 @@
+insertR R0 100 0 1
+insertR smallres 1.033 3 5
+insertR newres 3 2 2
+modifyR R0 12
+modifyR R0 -1.5
+deleteR R0
+deleteR all
+printNode 12
+printNode 8000
+printR alpha
+printR
+printR alpha beta
+Help me!!
+modifyR all 33

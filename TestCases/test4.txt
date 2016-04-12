@@ -1,0 +1,16 @@
+insertR r1 100 1 2 done
+insertR r1 100 1
+insertR r1 100
+insertR r1
+insertR
+modifyR r1 100 done
+modifyR r1
+modifyR
+printR r1 done
+printR
+printNode 1 done
+printNode all done
+printNode
+deleteR r1 done
+deleteR all done
+deleteR

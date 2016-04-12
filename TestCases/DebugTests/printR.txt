@@ -1,0 +1,4 @@
+printR all
+printR jdiowaj
+printR
+printR kjdw dwaj

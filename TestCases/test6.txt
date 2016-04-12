@@ -1,0 +1,15 @@
+insertR trailing_spaces 100 1 2
+modifyR trailing_spaces 200
+modifyR    spaces_in_between 100
+insertR missing_arg_with_spaces 100 1
+insertR missing_arg_with_spaces 100
+insertR missing_arg_with_spaces
+printR all
+insertR r1 50ohms 1 2
+insertR r1 50 1st_node 2
+insertR r1 50 1 2nd_node
+modifyR r1 100ohms
+printNode 1st_node
+printNode 1.5
+insertR r1 100 1 2.5
+insertR r1 100 1.5 2

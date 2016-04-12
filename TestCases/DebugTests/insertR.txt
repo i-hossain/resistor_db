@@ -1,0 +1,17 @@
+insertR resistor1 50 -1 2
+insertR res2 25 41234 5
+insertR resistor1 hdawidh 1 2
+insertR res -123 1 4
+insertR res -3cf 5 6
+insertR res 321 45 5001
+insertR all 321 45 5000
+insertR swa 321 5000 5000
+insertR swa 321 5000 2000 dwad
+insertR swa 321 5001 50d00
+insertR swasa 321 5000
+insertR
+insertR kdj
+insertR kdj 2
+insertR kdj 2 12
+insertR smallres 1.033 3 5
+insertR -1 -2 r1 -50 next

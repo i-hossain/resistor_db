@@ -1,0 +1,5 @@
+insert -1 -2 r1 -50 next
+insertR -1 -2 r1 -50 next
+modifyR r1 -1 next
+printNode one r2
+printNode -1 r2
