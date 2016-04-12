@@ -90,14 +90,15 @@ int main() {
 	// cout << "> ";
 	// getline (cin, line); // Get a line from standard input
 	// while (getline (file, line)) {
-	while (!cin.eof()) {
-		line.clear();
+	while (true) {
 		cout << "> ";
 		getline (cin, line); // Get a line from standard input
-		// cout << "> " << line << endl;
+		if (cin.eof())
+			break;
 
 		stringstream lineStream (line);
 		lineStream >> command;
+		// cout << "command: " << command << endl;
 		if (check_command(command))// First Error Check
 			cout << "Error: invalid command" << endl; 
 		else
@@ -107,7 +108,7 @@ int main() {
 			// parse an insertR command
 
 				if (!(lineStream >> name)) {// Eighth Error Check - Too few args
-					cout << "Too few argumentsss" << endl;
+					cout << "Too few arguments" << endl;
 					continue;
 				}
 
