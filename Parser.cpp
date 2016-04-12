@@ -152,7 +152,7 @@ int main() {
 				convert_n2 >> node2;
 
 				if (check_resistance(resistance)) {// Third Error Check
-					cout << "Error: negative reistance" << endl; 
+					cout << "Error: negative resistance" << endl; 
 					continue;
 				}
 
@@ -205,7 +205,7 @@ int main() {
 				convert_r >> resistance;
 
 				if (check_resistance(resistance)) {// Third Error Check
-					cout << "Error: negative reistance" << endl; 
+					cout << "Error: negative resistance" << endl; 
 					continue;
 				}
 
@@ -243,6 +243,11 @@ int main() {
 			// parse a printNode command
 				if (!(lineStream >> name)) {// Eighth Error Check - Too few args
 					cout << "Error: too few arguments" << endl;
+					continue;
+				}
+
+				if (lineStream >> dummy) {// Seventh Error Check - Too many args
+					cout << "Error: too many arguments" << endl;
 					continue;
 				}
 
