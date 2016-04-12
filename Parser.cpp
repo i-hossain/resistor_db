@@ -246,12 +246,13 @@ int main() {
 					continue;
 				}
 
-				if (lineStream >> dummy) {// Seventh Error Check - Too many args
-					cout << "Error: too many arguments" << endl;
-					continue;
-				}
-
 				if (name == ALL) {
+					
+					if (lineStream >> dummy) {// Seventh Error Check - Too many args
+						cout << "Error: too many arguments" << endl;
+						continue;
+					}
+
 					cout << "Print: all nodes" << endl;
 					continue;
 				}
