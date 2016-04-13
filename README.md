@@ -10,7 +10,7 @@ Validates input read from cin. Input is accepted one line at a time, with each
 line terminated by a newline character. If an error is encountered when parsing a line, the program prints an error message and the line is discarded; processing resumes at the next line. The program continues to accept and parse until an End-Of-File (EOF) condition is received.
 
 <table border="1">
-	<tbody>
+	<tbody border="1">
 		<tr>
 			<th>Command</th>
 			<th>Arguments</th>
