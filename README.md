@@ -1,4 +1,4 @@
-<h3><b>A Resistor Network Simulator</b></h3>
+<h1><b>A Resistor Network Simulator</b></h1>
 
 
 1. Parser						- Done
@@ -60,3 +60,9 @@ line terminated by a newline character. If an error is encountered when parsing 
 	</tr>
    </tbody>
 </table>
+
+<h4>Resistor Network Program</h4>
+(Work in Progress)
+
+<h4>Resistor Network Simulator</h4>
+(To be done)
