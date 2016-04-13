@@ -1,13 +1,15 @@
 <h3><b>A Resistor Network Simulator</b></h3>
 
 
-1. Parser			- Done
-2. Resistor Network Program	- Work in Progress
+1. Parser						- Done
+2. Resistor Network Program		- Work in Progress
 3. Resistor Network Simulator	- To be done
 
-<h5><u>Parser</u></h5>
+
+
+<u><h4>Parser</h4></u>
 Validates input read from cin. Input is accepted one line at a time, with each
-line terminated by a newline character. If an error is encountered when parsing a line, the program prints an error message and the line is discarded; processing resumes at the next line. The program continues to accept and parse until an End-Of-File (EOF) condition is received.
+line terminated by a newline character. If an error is encountered when parsing a line, the program prints an error message and the line is discarded; processing resumes at the next line. The program continues to accept and parse until an End-Of-File (EOF) condition is received. The table below shows the valid commands, arguments and their output.
 
 <table style="border-width: 0px; margin 0px; width:100%; height: 100%; padding:0px; border-collapse: collapse;">
     <tbody style="border-width: 0px; margin 0px; width:100%; height: 100%; padding:0px;">
