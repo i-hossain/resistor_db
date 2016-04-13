@@ -9,7 +9,8 @@
 Validates input read from cin. Input is accepted one line at a time, with each
 line terminated by a newline character. If an error is encountered when parsing a line, the program prints an error message and the line is discarded; processing resumes at the next line. The program continues to accept and parse until an End-Of-File (EOF) condition is received.
 
-<table border="1" border-collapse="collapse">
+<table style="border-width: 0px; margin 0px; width:100%; height: 100%; padding:0px; border-collapse: collapse;">
+    <tbody style="border-width: 0px; margin 0px; width:100%; height: 100%; padding:0px;">
 	<tr>
 		<th>Command</th>
 		<th>Arguments</th>
@@ -55,4 +56,5 @@ line terminated by a newline character. If an error is encountered when parsing 
 		<td>all</td>
 		<td>Deleted: all resistors</td>
 	</tr>
+   </tbody>
 </table>
